@@ -29,7 +29,7 @@ public class BaseController {
   protected static QueryFilter dateFilter(final QueryFilter f, final Date value,
       final FilterMode filterMode, final String... keys) {
 
-    final int length = keys.length;
+    final int length = keys.length; 
 
     for (int i = 0; i < length; i++) {
       final DateFilter dateFilter = new DateFilter(keys[i], value, filterMode);
