@@ -22,6 +22,7 @@ import com.loan.common.util.SortField;
 import com.loan.common.util.UseLike;
 import com.loan.data.dto.MapDTO;
 
+//Basse Controller
 public class BaseController {
 
   protected static String rootPath;
