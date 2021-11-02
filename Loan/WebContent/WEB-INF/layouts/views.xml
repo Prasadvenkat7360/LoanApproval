@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+
+	<definition name="demo/simpleGrid" extends="bodySwitcher">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/demo/simpleGrid.jsp" />
+	</definition>
+
+	<definition name="demo/simpleGridUsingTags" extends="bodySwitcher">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/demo/simpleGridUsingTags.jsp" />
+	</definition>
+
+	<definition name="demo/complexGrid" extends="bodySwitcher">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/demo/complexGrid.jsp" />
+	</definition>
+
+	<definition name="demo/advancedGrid" extends="bodySwitcher">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/demo/advancedGrid.jsp" />
+	</definition>
+
+	<definition name="demo/remotePagingGrid" extends="bodySwitcher">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/demo/remotePagingSoringGrid.jsp" />
+	</definition>
+
+	<definition name="demo/customJqxCombobox" extends="bodySwitcher">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/demo/customJqxCombobox.jsp" />
+	</definition>
+
+	<definition name="demo/designGrid" extends="bodySwitcher">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/demo/designGrid.jsp" />
+	</definition>
+
+	<definition name="aboutus" extends="bodySwitcher">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/common/aboutus.jspx" />
+	</definition>
+	
+	<definition name="termsCondition" extends="bodySwitcher">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/common/termsCondition.jsp" />
+	</definition>
+	<definition name="privacyPolicy" extends="bodySwitcher">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/common/privacyPolicy.jsp" />
+	</definition>
+	<definition name="contactUs" extends="bodySwitcher">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/common/contactUs.jsp" />
+	</definition>
+	<definition name="faq" extends="bodySwitcher">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/common/faq.jsp" />
+	</definition>
+
+	<definition name="demo/home" extends="default">
+		<put-attribute name="body" value="/WEB-INF/views/demo/home.jsp" />
+	</definition>
+
+	<definition name="demo/*" template="bodySwitcher">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/demo/{1}.jsp" />
+	</definition>
+
+	<!-- Below is for OE -->
+
+	<definition name="home" extends="threeZoneTemplate">
+		<put-attribute name="title" value="Order Execution - Home" />
+		<put-attribute name="body" value="/WEB-INF/views/common/home.jsp" />
+	</definition>
+	
+
+	<definition name="aboutus" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/common/aboutus.jspx" />
+	</definition>
+
+	<definition name="assignDesigner" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/design/assignDesigner.jsp" />
+	</definition>
+
+	<definition name="designUpload" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/design/designUpload.jsp" />
+	</definition>
+
+	<definition name="designReviewApproval" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/design/designReviewApproval.jsp" />
+	</definition>
+
+	<definition name="designSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/design/designSearch.jsp" />
+	</definition>
+
+	<definition name="designSubmit" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/design/designSubmit.jsp" />
+	</definition>
+
+	<definition name="designReview" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/design/designUploadReview.jsp" />
+	</definition>
+
+	<definition name="viewDesignVariation" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/design/viewDesignVariation.jsp" />
+	</definition>
+
+	<definition name="createTemplate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/createTemplate.jsp" />
+	</definition>
+	
+	<definition name="message" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/common/message.jsp" />
+	</definition>
+
+	<definition name="assignReleaseOrder" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/assignReleaseOrder.jsp" />
+	</definition>
+	<definition name="addStoneAccessoryCodes" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/addStoneAccessoryCodes.jsp" />
+	</definition>
+
+	<definition name="transferVoucher" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/transitVoucher.jsp" />
+	</definition>
+	
+	<definition name="ltvListingAck" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/ltvListingAck.jsp" />
+	</definition>
+	
+	<definition name="ltvManualZoneToZone" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/ltvManualZoneToZone.jsp" />
+	</definition>
+	
+	<definition name="transitFromDC" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/transitFromDC.jsp" />
+	</definition>
+
+	<definition name="materialIssueVoucher" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/materialIssueVoucher.jsp" />
+	</definition>
+
+	<definition name="sentParcel" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/parcel/sentParcel.jsp" />
+	</definition>
+
+	<definition name="pendingIndents" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/pendingIndent.jsp" />
+	</definition>
+
+	<definition name="bullionIndentDistribution" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/bullionIndentDistribution.jsp" />
+	</definition>
+
+	<definition name="receiveParcel" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/parcel/receiveParcel.jsp" />
+	</definition>
+	<definition name="parcelMiv" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/parcel/parcelMiv.jsp" />
+	</definition>
+	<definition name="parcelData" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/parcel/parcelData.jsp" />
+	</definition>
+
+	<definition name="createSentparcel" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/parcel/createSentparcel.jsp" />
+	</definition>
+
+	<definition name="indentView" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/indentview.jsp" />
+	</definition>
+	<definition name="bullionMRV" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/bullionMRV.jsp" />
+	</definition>
+
+	<definition name="createReciveParcel" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/parcel/createReciveParcel.jsp" />
+	</definition>
+
+	<definition name="receiveParcelData" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/parcel/receiveParcelData.jsp" />
+	</definition>
+
+	<definition name="vendorCostMaintenanceListing" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/vendorCostMaintenanceListing.jsp" />
+	</definition>
+
+	
+	<definition name="stonemapPrice" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/stonemapPrice.jsp" />
+	</definition>
+
+	<definition name="vendorCostMaintenance" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/vendorCostMaintenance.jsp" />
+	</definition>
+
+	<definition name="vendorCostMaintenanceEdit" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/vendorCostMaintenanceEdit.jsp" />
+	</definition>
+
+	<definition name="vcmUploadModal" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/vcmUploadModal.jsp" />
+	</definition>
+
+	<definition name="articleMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/articleMaster.jsp" />
+	</definition>
+
+	<definition name="accessoryArticle" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/accessoryMaster.jsp" />
+	</definition>
+
+	<definition name="metalBalance" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/metalBalance.jsp" />
+	</definition>
+	
+	<definition name="scanningWtCheck" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/scanningWtCheck.jsp" />
+	</definition>
+	
+	
+	<definition name="looseStoneStockReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/looseStoneStockReport.jsp" />
+	</definition>
+	
+	<definition name="ocaOpenCloseReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/ocaOpenCloseReport.jsp" />
+	</definition>
+
+	<definition name="metalStone" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/metalStone.jsp" />
+	</definition>
+	
+	<definition name="handOverSlip" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/handOverSlip.jsp" />
+	</definition>
+	
+	<definition name="consignmentLooseStonesStock" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/consignmentLooseStonesStock.jsp" />
+	</definition>
+	 
+	 <definition name="opMiv" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/opMiv.jsp" />
+	</definition>
+	
+	<definition name="accessoryPrintTag" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/accessoryPrintTag.jsp" />
+	</definition>
+	
+	<definition name="looseStonePrintTag" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/looseStonePrintTag.jsp" />
+	</definition>
+	
+	 <definition name="stoneMrvToGrAdjReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/stoneMrvToGrAdjReport.jsp" />
+	</definition>
+	
+	 <definition name="fgMrvToGrAdjReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/fgMrvToGrAdjReport.jsp" />
+	</definition>
+	 
+      <definition name="pendingMaterial" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/pendingMaterial.jsp" />
+	</definition>
+	<definition name="stoneReqMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/stoneReqMaster.jsp" />
+	</definition>
+	<definition name="stoneArticleMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/stoneArticleMaster.jsp" />
+	</definition>
+
+	<!-- Melting start -->
+	<definition name="issueForMelting" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/melting/issueForMelting.jsp" />
+	</definition>
+	<definition name="issueForMeltingReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/issueForMeltingReport.jsp" />
+	</definition>
+	<definition name="createIssueForMelting" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/melting/createIssueForMelting.jsp" />
+	</definition>
+	<definition name="meltingView" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/melting/meltingView.jsp" />
+	</definition>
+	<definition name="captureUnsetting" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/melting/captureUnsetting.jsp" />
+	</definition>
+	<!-- Melting end -->
+	<definition name="materialIssueVoucherListing" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/materialIssueVoucherListing.jsp" />
+	</definition>
+	<definition name="psrNumberListings" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/psrNumberListings.jsp" />
+	</definition>
+	<definition name="pendingMelting" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/design/pendingMelting.jsp" />
+	</definition>
+	<definition name="materialReceiveVoucher" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/materialReceiveVoucher.jsp" />
+	</definition>
+
+	<definition name="createArticleMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/createArticleMaster.jsp" />
+	</definition>
+	<definition name="articleMasterData" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/articleMasterData.jsp" />
+	</definition>
+
+	<definition name="pendingOrders" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/query/pendingOrders.jsp" />
+	</definition>
+
+	<definition name="metalRate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/metalRate.jsp" />
+	</definition>
+
+	<definition name="metalAccountSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/query/metalAccount.jsp" />
+	</definition>
+
+	<definition name="mrvListing" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/materialReceiveVoucherListing.jsp" />
+	</definition>
+
+	<definition name="workOrderListing" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/workOrderListing.jsp" />
+	</definition>
+
+	<definition name="bullionMRVReturn" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/bullionMRVReturn.jsp" />
+	</definition>
+	
+	<definition name="bullionMRVReceipt" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/bullionMRVReceipt.jsp" />
+	</definition>
+	
+	<definition name="metalBelongs" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/mockup/metalBelongs.jsp" />
+	</definition>
+
+	<definition name="employeeDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/mockup/employeeDetails.jsp" />
+	</definition>
+
+	<definition name="grFG" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/createGRForFG.jsp" />
+	</definition>
+
+	<definition name="grProcess" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/gr/grProcess.jsp" />
+	</definition>
+	
+	<definition name="diamondCertificateEntry" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/gr/diamondCertificateEntry.jsp" />
+	</definition>
+
+	<definition name="stonePendingIndents" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/stonePendingIndent.jsp" />
+	</definition>
+	<definition name="stoneIndent" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/stoneIndent.jsp" />
+	</definition>
+
+	<definition name="stoneIndentDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/stoneIndentDetails.jsp" />
+	</definition>
+
+	<definition name="vendorDetailsMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/vendorDetailsMaster.jsp" />
+	</definition>
+
+	<definition name="stoneIndentMRV" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/stoneIndentMrv.jsp" />
+	</definition>
+
+
+	<definition name="createVendorMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/createVendorDetailsMaster.jsp" />
+	</definition>
+
+	<definition name="articleSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/articleSearch.jsp" />
+	</definition>
+
+	<definition name="editVendorMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/editVendorMaster.jsp" />
+	</definition>
+
+	<definition name="stoneSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/stoneSearch.jsp" />
+	</definition>
+	
+	<definition name="stoneSearchREN" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/stoneSearchREN.jsp" />
+	</definition>
+	
+	<definition name="certDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/certDetails.jsp" />
+	</definition>
+	
+	<definition name="accSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/accSearch.jsp" />
+	</definition>
+	
+	<definition name="accSearchREN" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/accSearchREN.jsp" />
+	</definition>
+
+	<definition name="stoneAccountSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/query/stoneAccount.jsp" />
+	</definition>
+
+	<definition name="attributeSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/attributeSearch.jsp" />
+	</definition>
+
+	<definition name="provToActual" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/gr/provToActual.jsp" />
+	</definition>
+
+    <definition name="provisionalCreate" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/gr/provisionalCreate.jsp" />
+	</definition>
+
+	 <definition name="diamondCert" extends="body">
+			<put-attribute name="bodyContent" value="/WEB-INF/views/gr/diamondCert.jsp" />
+	 </definition>
+
+	<definition name="vendorStoneSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/vendorStoneMaster.jsp" />
+	</definition>
+	
+	<definition name="openCloseOrder" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/query/openCloseOrder.jsp" />
+	</definition>
+	
+	<definition name="CreateVendorStoneMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/CreateVendorStoneMaster.jsp" />
+	</definition>
+	<definition name="vendorAccessorySeacrh" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/vendorAccessoryMaster.jsp" />
+	</definition>
+
+	<definition name="childMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/childMaster.jsp" />
+	</definition>
+
+	<definition name="employeeMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/employeeMaster.jsp" />
+	</definition>
+
+	<definition name="qcFg" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/gr/qcFg.jsp" />
+	</definition>
+	
+	<definition name="qcFgStone" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/gr/qcFgStone.jsp" />
+	</definition>
+	
+	<definition name="metalAccountReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/query/metalAccountReport.jsp" />
+	</definition>
+
+	<definition name="qcParameter" extends="body">
+		<put-attribute name="bodyContent" value="/WEB-INF/views/gr/qcParameter.jsp" />
+	</definition>
+
+	<definition name="grAnalyze" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/grCompleteMRVProcess.jsp" />
+	</definition>
+
+	<definition name="metalAccountingLoc" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/metalAccountingLoc.jsp" />
+	</definition>
+
+	<definition name="stoneAccountingLoc" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/stoneAccountingLoc.jsp" />
+	</definition>
+    
+	<definition name="parameterDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/parameterDetails.jsp" />
+	</definition>
+	<definition name="editStoneMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/editStoneMaster.jsp" />
+	</definition>
+	<definition name="editMetalAccountMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/editMetalAccountMaster.jsp" />
+	</definition>
+	<definition name="dcDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/dcDetails.jsp" />
+	</definition>
+	<definition name="zoneDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/zoneDetails.jsp" />
+	</definition>
+
+	<definition name="qualityParamFgRm" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/qualityParamFgRm.jsp" />
+	</definition>
+	<definition name="companyDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/companyDetails.jsp" />
+	</definition>
+
+	<definition name="storeDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/storeDetails.jsp" />
+	</definition>
+
+	<definition name="mupTypeMaintenance" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/mupTypeMaintenance.jsp" />
+	</definition>
+	<definition name="maintainSavingsPlanScheme" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/maintainSavingsPlanScheme.jsp" />
+	</definition>
+	<definition name="maintainCompanyholidays" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/maintainCompanyholidays.jsp" />
+	</definition>
+	<definition name="markUpTable" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/markUpTable.jsp" />
+	</definition>
+
+	<definition name="metalMAPPrice" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/metalMAPPrice.jsp" />
+	</definition>
+	<definition name="listDesign" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/listDesign.jsp" />
+	</definition>
+
+	<definition name="vendorStoneBalances" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/vendorStoneBalances.jsp" />
+	</definition>
+	<definition name="salesGroupDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/salesGroupDetails.jsp" />
+	</definition>
+
+	<definition name="fpCustOrder" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/fpCustOrder.jsp" />
+	</definition>
+	
+	<definition name="scOrders" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/scOrders/scOrder.jsp" />
+	</definition>
+	
+	<definition name="sentQueryParcel" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/sentQueryParcel.jsp" />
+	</definition>
+	
+	<definition name="customerOrderFollowUp" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/customerOrderFollowUp.jsp" />
+	</definition>
+	
+	<definition name="metalReq" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/metalReq.jsp" />
+	</definition>
+	
+	<definition name="accessoryReq" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/accessoryReq.jsp" />
+	</definition>	
+	<definition name="adjustmentVoucher" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/adjustmentVoucher.jsp" />
+	</definition>
+	
+	<definition name="orderAdvancePending" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/scOrders/orderAdvancePending.jsp" />
+	</definition>	
+	
+	<definition name="jobWorkerReminder" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/jobWorkerReminder.jsp" />
+	</definition>
+	
+	<definition name="ageingAnalysis" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/ageingAnalysis.jsp" />
+	</definition>
+	<definition name="customerOrders" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/customerOrders.jsp" />
+	</definition>
+	<definition name="stockItem" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/stockItem.jsp" />
+	</definition>
+	<definition name="orderRequestForCancellation" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/orderRequestForCancellation.jsp" />
+	</definition>
+	
+	<definition name="listOfChildMasters" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/listOfChildMasters.jsp" />
+	</definition>
+	
+	<definition name="pendingOrdersReleaseToDc" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/pendingOrdersReleaseToDc.jsp" />
+	</definition>
+	
+	<definition name="materialTallyingRMFG" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/materialTallyingRMFG.jsp" />
+	</definition>
+	
+	<definition name="attributesMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/attributesMaster.jsp" />
+	</definition>
+	
+	<definition name="grHeaderImageView" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/grHeaderImageView.jsp" />
+	</definition>
+	<definition name="orderItemDesignView" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/orderItemDesignView.jsp" />
+	</definition>
+	<definition name="grStoneAcc" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/grStoneAcc.jsp" />
+	</definition>
+	<definition name="grAccessory" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/grAccessory.jsp" />
+	</definition>
+	<definition name="costBorneBy" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/costBorneBy.jsp" />
+	</definition>
+	<definition name="hsnMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/hsnMaster.jsp" />
+	</definition>
+	<definition name="designOrder" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/designOrder.jsp" />
+	</definition>
+	<definition name="viewCustomer" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/viewCustomer.jsp" />
+	</definition>	
+	<definition name="designApproval" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/designApproval.jsp" />
+	</definition>
+	<definition name="taxStructure" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/taxStructure.jsp" />
+	</definition>
+	<definition name="metalTransferVoucher" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/metalTransferVoucher.jsp" />
+	</definition>
+	<definition name="metalTransferVoucherCreate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/metalTransferVoucherCreate.jsp" />
+	</definition>
+	<definition name="unsettingGrCreate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/melting/unsettingGrCreate.jsp" />
+	</definition>
+	<definition name="cancellationOfPsr" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/cancellationOfPsr.jsp" />
+	</definition>
+	<definition name="pdcDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/pdcDetails.jsp" />
+	</definition>
+	<definition name="purchaseBillDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/purchaseBillDetails.jsp" />
+	</definition>
+	<definition name="psrCancellationIntimation" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/psrCancellationIntimation.jsp" />
+	</definition>
+	<definition name="rmtoFgTransfer" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/rmtoFgTransfer.jsp" />
+	</definition>
+	<definition name="metalRateQuery" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/metalRateQuery.jsp" />
+	</definition>
+	<definition name="stoneReturned" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/stoneReturned.jsp" />
+	</definition>
+	<definition name="qualityCheckRejectedItems" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/qualityCheckRejectedItems.jsp" />
+	</definition>
+	<definition name="solitaireSetInJewellery" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/solitaireSetInJewellery.jsp" />
+	</definition>
+    <definition name="billDiscount" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/billDiscount.jsp" />
+	</definition>
+	 <definition name="fgStockItem" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/fgStockItem.jsp" />
+	</definition>
+	
+	 <definition name="stoneAccMovement" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/stoneAccMovement.jsp" />
+	</definition>
+	
+	<definition name="accMovement" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/accMovement.jsp" />
+	</definition>
+	
+	 <definition name="movementStnAccFromToOrder" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/movementStnAccFromToOrder.jsp" />
+	</definition>
+	<definition name="scanningOrWeightCheck" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/scanningOrWeightCheck.jsp" />
+	</definition>
+	<definition name="scanningOrWtCheckCreate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/scanningOrWtCheckCreate.jsp" />
+	</definition>
+	 <definition name="articleIdQuery" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/articleIdQuery.jsp" />
+	</definition>
+	<definition name="soRelease" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/smallOrder/soRelease.jsp" />
+	</definition>
+
+	<definition name="soGR" extends="body">
+		<put-attribute name="bodyContent" 
+		value="/WEB-INF/views/smallOrder/soGR.jsp" />
+	</definition>
+	
+	<definition name="smallOrderGRListing" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/smallOrder/smallOrderGRListing.jsp" />
+	</definition>
+	<definition name="bullionMRVRetListing" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/indent/bullionMRVRetListing.jsp" />
+	</definition>
+	<definition name="vendorReturnCreate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/vendorReturnCreate.jsp" />
+	</definition>
+	
+	<definition name="assembleDisassemble" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/assembleDisassemble.jsp" />
+	</definition>
+	
+	 <definition name="saleBillReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/saleBillReport.jsp" />
+	</definition>
+	<definition name="captureUnsettingMiv" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/melting/captureUnsettingMiv.jsp" />
+	</definition>
+	
+	<definition name="renumberingGRFG" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/renumberingGRFG.jsp" />
+	</definition>
+	
+	<definition name="smallOrderListing" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/smallOrder/smallOrderListing.jsp" />
+	</definition>
+	<definition name="scanningWcReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/scanningWcReport.jsp" />
+	</definition>
+	<definition name="accStockItem" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/accStockItem.jsp" />
+	</definition>
+	<definition name="alertSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/alerts/alertSearch.jsp" />
+	</definition>
+	<definition name="notificationSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/alerts/notificationSearch.jsp" />
+	</definition>
+	<definition name="fasDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/fas/fasDetails.jsp" />
+	</definition>
+	<definition name="fasListing" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/fas/fasListing.jsp" />
+	</definition>
+	<definition name="promotions" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/promotions.jsp" />
+	</definition>
+	<definition name="materialReturn" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/scOrders/materialReturn.jsp" />
+	</definition>
+	<definition name="vendorMetalAccStatement" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/vendorMetalAccStatement.jsp" />
+	</definition>
+	<definition name="vendorStoneAccStmt" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/vendorStoneAccStatement.jsp" />
+	</definition>
+	<definition name="adjustmentVoucherForStones" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/adjustmentVoucherForStones.jsp" />
+	</definition>
+	<definition name="authorization" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/common/authorization.jsp" />
+	</definition>
+	<definition name="assignAuthRole" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/assignAuthRole.jsp" />
+	</definition>
+	<definition name="dailyStockCheckDc" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/dailyStockCheckDc.jsp" />
+	</definition>
+	<definition name="roughCashBook" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/roughCashBook.jsp" />
+	</definition>
+	<definition name="diamondSolitaireQuery" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/query/diamondSolitaireQuery.jsp" />
+	</definition>
+	<definition name="duplicateCustomer" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/crm/duplicateCustomer.jsp" />
+	</definition>
+	<definition name="renumberingGRLS" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/renumberingGRLS.jsp" />
+	</definition>
+	<definition name="renumberingGRACC" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/gr/renumberingGRACC.jsp" />
+	</definition>
+	<definition name="consignmentGoodsReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/consignmentGoodsReport.jsp" />
+	</definition>
+	<definition name="loyaltyCustSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/loyaltyCustSearch.jsp" />
+	</definition>
+	<definition name="openCloseBalanceSummaryDetailed" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/openCloseBalSummaryDetailed.jsp" />
+	</definition>
+	<definition name="purityTestingReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/purityTestingReport.jsp" />
+	</definition>
+	<definition name="statementOfAccount" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/statementOfAccount.jsp" />
+	</definition>
+	<definition name="customerValSlip" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/customerValSlip.jsp" />
+	</definition>
+	<definition name="roughCashBookDetail" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/roughCashBookDetail.jsp" />
+	</definition>
+	<definition name="solitaireStoneMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/solitaireStoneMaster.jsp" />
+	</definition>
+	<definition name="dailyOrderCheckFg" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/dailyOrderCheckFg.jsp" />
+	</definition>
+	<definition name="grvToIgrDetailedQuery" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/grvToIGRReport.jsp" />
+	</definition>
+	<definition name="dailyStockCheckReportDC" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/dailyStockCheckReportDC.jsp" />
+	</definition>
+	<definition name="salesReturnReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/salesReturnReport.jsp" />
+	</definition>
+	<definition name="loyaltyMaster" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/loyaltyMaster.jsp" />
+	</definition>
+	<definition name="captureUnsettingForSplit" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/captureUnsettingForSplit.jsp" />
+	</definition>
+	<definition name="unsettingMivForSplit" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/unsettingMivForSplit.jsp" />
+	</definition>
+	<definition name="unsettingGrForSplit" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/unsettingGrForSplit.jsp" />
+	</definition>
+	<definition name="segWiseRotationalReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/rotationalReportSegmentWise.jsp" />
+	</definition>
+	<definition name="stoneMovementForSplit" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/stoneMovementForSplit.jsp" />
+	</definition>
+	<definition name="rotationalReportAvlVsSale" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/rotationalReportAvlVsSale.jsp" />
+	</definition>
+	<definition name="rotationalReportSegJewelWise" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/rotationalReportSegJewelTypeWise.jsp" />
+	</definition>
+	<definition name="splitPsrSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/splitPsrSearch.jsp" />
+	</definition>
+	<definition name="attendanceForPsq" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/psq/attendanceForPsq.jsp" />
+	</definition>
+	<definition name="consignmentAvlReceiptReturnReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/consignmentAvlRecpRetReport.jsp" />
+	</definition>
+	<definition name="duplicateCustRemoval" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/duplicateCustRemoval.jsp" />
+	</definition>
+	<definition name="mailTemplate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/intimationAndReminder.jsp" />
+	</definition>
+	<definition name="custIntRemBatch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/custIntRemBatch.jsp" />
+	</definition>
+	<definition name="intimationReminderReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/intReminderReport.jsp" />
+	</definition>
+	<definition name="phoneBookIntRem" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/phoneBookIntRem.jsp" />
+	</definition>
+	<definition name="phoneBookListRem" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/phoneBookListRem.jsp" />
+	</definition>
+	<definition name="failedBatchIntRem" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/intRemErrorLogs.jsp" />
+	</definition>
+	<definition name="stockItemQueryBasedOnStatus" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/query/stockItemQueryBasedOnStatus.jsp" />
+	</definition>
+	<definition name="manualBatchRun" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/manualBatchRun.jsp" />
+	</definition>
+	<definition name="stockMasterQueryReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/query/itemHistoryDetails.jsp" />
+	</definition>
+	<definition name="captureUnsettingReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/captureUnsettingReport.jsp" />
+	</definition>
+	<definition name="openCloseBalSumDetReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/openCloseBalSumDetReport.jsp" />
+	</definition>
+	<definition name="loyaltyCustPBDetails" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/loyaltyCustPBDetails.jsp" />
+	</definition>
+	<definition name="savingsPlanRemReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/savingsPlanRemReport.jsp" />
+	</definition>
+	<definition name="discPromoAnalysis" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/discPromoAnalysis.jsp" />
+	</definition>
+	<definition name="statementOfAccountReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/statementOfAccountReport.jsp" />
+	</definition>	
+	<definition name="loyaltyPointExpiryIntimation" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/loyaltyPointExpiryIntimation.jsp" />
+	</definition>
+	<definition name="promoEventTemplate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/promoEventTemplate.jsp" />
+	</definition>
+	<definition name="generatePromoEvents" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/generatePromoEvents.jsp" />
+	</definition>
+	<definition name="greetingsToCustBdyOrAnvTemplate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/greetingsToCustBdyOrAnvTemplate.jsp" />
+	</definition>
+	<definition name="sendGreetingsToCustBdyOrAnv" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/sendGreetingsToCustBdyOrAnv.jsp" />
+	</definition>
+	<definition name="vendorMasDetailReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/vendorMasDetailReport.jsp" />
+	</definition>
+	<definition name="vendorMasSummary" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/vendorMasSummary.jsp" />
+	</definition>
+	<definition name="savingsPlanMesg" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/savingsPlanMesg.jsp" />
+	</definition>
+	<definition name="spMesgReminder" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/masters/spMesgReminder.jsp" />
+	</definition>
+	<definition name="splitGRCreate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/order/splitGRCreate.jsp" />
+	</definition>
+	<definition name="loyaltyCustomerRanking" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/loyaltyCustomerRanking.jsp" />
+	</definition>
+	<definition name="vendorMasStoneDetailReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/vendorMasStoneDetailReport.jsp" />
+	</definition>
+	<definition name="welcomeLetterTemplate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/welcomeLetterTemplate.jsp" />
+	</definition>
+	<definition name="welcomeLetterTemplateer" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/welcomeLetterTemplateer.jsp" />
+	</definition>
+	
+	
+	<definition name="loyaltyCustStatementofAcc" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/loyaltyCustStatementofAcc.jsp" />
+	</definition>
+	<definition name="loyaltyStatementSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/loyaltyStatementSearch.jsp" />
+	</definition>
+	<definition name="custLoyaltyPoint" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/custLoyaltyPoint.jsp" />
+	</definition>
+	<definition name="vendorMasStoneSummaryReport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/vendorMasStoneSummaryReport.jsp" />
+	</definition>
+	<definition name="rotationalReportExport" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/report/rotationalReportExport.jsp" />
+	</definition>
+	
+	<definition name="transactionAlertTemplate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/transactionAlertTemplate.jsp" />
+	</definition>
+	<definition name="sendTransactionAlert" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/Crm/sendTransactionAlert.jsp" />
+	</definition>
+	
+	<definition name="vendorReminder" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/vendorReminder.jsp" />
+	</definition>
+	
+	<definition name="vendorReminderSearch" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/vendorReminderSearch.jsp" />
+	</definition>	
+	
+	<definition name="vendorReminderTemplate" extends="body">
+		<put-attribute name="bodyContent"
+			value="/WEB-INF/views/workOrder/vendorReminderTemplate.jsp" />
+	</definition>
+	
+	
+	
+</tiles-definitions>

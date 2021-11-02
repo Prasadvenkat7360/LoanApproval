@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="
+       		http://www.springframework.org/schema/beans 
+       		http://www.springframework.org/schema/beans/spring-beans.xsd
+       		http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        	http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+            http://www.springframework.org/schema/jee
+            http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+        ">
+
+	<context:annotation-config />
+	<jee:local-slsb id="employeeMasterService"
+			 jndi-name="java:global/Loan/EmployeeMasterService"
+			 business-interface="com.loan.component.service.EmployeeMasterLocal" />
+	<jee:local-slsb id="roleFunctionService"
+			 jndi-name="java:global/Loan/RoleFunctionService"
+			 business-interface="com.loan.component.service.RoleFunctionLocal" />
+	<jee:local-slsb id="employeeService"
+			 jndi-name="java:global/Loan/EmployeeService"
+			 business-interface="com.loan.component.service.EmployeeLocal" />
+		
+	<bean
+		class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+		<property name="objectMapper">
+			<bean
+				class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean"
+				p:failOnEmptyBeans="false" p:indentOutput="true"
+				p:defaultViewInclusion="false" />
+		</property>
+	</bean>
+
+</beans>

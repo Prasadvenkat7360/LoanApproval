@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+
+	<definition name="bodySwitcher"
+		template="/WEB-INF/views/demo/template/bodySwitcher.jsp">
+		<put-attribute name="bodyContent" value="" />
+	</definition>
+
+	<definition name="default"
+		template="/WEB-INF/views/demo/template/defaultTemplate.jsp">
+		<put-attribute name="title" value="Demo Home" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/demo/template/header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/demo/template/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="outline"
+			value="/WEB-INF/views/demo/template/outline.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/demo/template/footer.jsp" />
+	</definition>
+
+	<!-- Below is for OE -->
+
+	<definition name="sixZoneTemplate"
+		template="/WEB-INF/views/template/sixZoneTemplate.jsp">
+		<put-attribute name="title" value="Demo Home" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/common/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="outline" value="/WEB-INF/views/common/outline.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	
+	<definition name="threeZoneTemplate"
+		template="/WEB-INF/views/template/threeZoneTemplate.jsp">
+		<put-attribute name="title" value="Order Execution" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+
+	<definition name="body" template="/WEB-INF/views/template/bodySwitcher.jsp">
+		<put-attribute name="bodyContent" value="" />
+	</definition>
+	
+	<definition name="login" template="/login.jsp"/>
+		
+
+</tiles-definitions>
